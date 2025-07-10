@@ -14,13 +14,7 @@ final class AppTheme {
         ),
       ).copyWith(
           extensions: {AppColor.light},
-          cardTheme: CardTheme(
-            color: AppColor.light.elementBackgroundPrimary,
-            margin: EdgeInsets.zero,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
-            ),
-          ),
+          //cardTheme: CardTheme(),
           progressIndicatorTheme: ProgressIndicatorThemeData(
             color: AppColor.light.primary,
             linearTrackColor: AppColor.light.elementBackgroundSecondary,
@@ -44,12 +38,8 @@ final class AppTheme {
             borderColor: AppColor.light.elementBackgroundPrimary,
             splashColor: Colors.transparent,
           ),
-          dialogTheme: DialogTheme(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
-            ),
-            backgroundColor: AppColor.light.elementBackgroundPrimary,
-          ),
+          //dialogTheme: DialogTheme(),
+
           inputDecorationTheme: InputDecorationTheme(
             filled: true,
             fillColor: AppColor.light.elementBackgroundSecondary,
@@ -77,13 +67,13 @@ final class AppTheme {
         ),
       ).copyWith(
           extensions: {AppColor.dark},
-          cardTheme: CardTheme(
+          /*cardTheme: CardTheme(
             color: AppColor.dark.elementBackgroundPrimary,
             margin: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-          ),
+          ),*/
           progressIndicatorTheme: ProgressIndicatorThemeData(
             color: AppColor.dark.primary,
             linearTrackColor: AppColor.dark.elementBackgroundSecondary,
@@ -107,12 +97,12 @@ final class AppTheme {
             borderColor: AppColor.dark.elementBackgroundPrimary,
             splashColor: Colors.transparent,
           ),
-          dialogTheme: DialogTheme(
+          /*dialogTheme: DialogTheme(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
             backgroundColor: AppColor.dark.elementBackgroundPrimary,
-          ),
+          ),*/
           inputDecorationTheme: InputDecorationTheme(
             filled: true,
             fillColor: AppColor.dark.elementBackgroundSecondary,
