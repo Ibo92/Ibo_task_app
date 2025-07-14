@@ -38,7 +38,7 @@ class IboColorWidget extends StatelessWidget {
         ),
         // Zweite Reihe Row
         Row(
-mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
               height: 100,
