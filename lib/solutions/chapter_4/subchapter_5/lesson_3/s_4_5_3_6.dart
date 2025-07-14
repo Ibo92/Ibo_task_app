@@ -7,7 +7,7 @@ class S4536 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProductListScreen(),
+      home: ProductIboList(),
     );
   }
 }
@@ -19,8 +19,8 @@ class Iboproduct {
   Iboproduct({required this.name, required this.price});
 }
 
-class ProductListScreen extends StatelessWidget {
-  const ProductListScreen({super.key});
+class ProductIboList extends StatelessWidget {
+  const ProductIboList({super.key});
 
   @override
   Widget build(BuildContext context) {
