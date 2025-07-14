@@ -46,9 +46,16 @@ class ProductIboList extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: [
                  Icon(Icons.shopping_cart, color: Color(0xFFD3CD14), size:30,),
-                 SizedBox(width: 8),//Abstand zwischen Icon und Text (Preis)
+                 SizedBox(width: 8),//Abstand zwischen Icon und Text (Preis),
                 Text(
-                  '${product.price} €',//// Zeigt den Preis des Produkts mit Währungszeichen
+              product.name, // Zeigt den Produktnamen
+              style:TextStyle(
+                color: Colors.white, 
+                fontSize: 20),
+            ),
+            SizedBox(width: 15),//Abstand zwischen Icon und Text (Preis),
+                Text(
+                  '- ${product.price} €',//// Zeigt den Preis des Produkts mit Währungszeichen
                   style:  TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -57,10 +64,7 @@ class ProductIboList extends StatelessWidget {
                 ),
               ],
             ),
-            title: Text(
-              product.name, // Zeigt den Produktnamen
-              style:  TextStyle(color: Colors.white),
-            ),
+            
              // Pfeil-nach-rechts-Symbol (zeigt an, dass es weitergeht)
             trailing:Icon( 
             Icons.chevron_right, 
