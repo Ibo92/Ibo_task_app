@@ -26,31 +26,37 @@ class _MyNameWidgetState extends State<MyNameWidget>
   setState(() {
     _name = 'Ibo Mous';
   });
+ 
   }
 @override
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        // mein Text Widget
+        // mein Text Widget zum Anzeigen/Verstecken
         Text(_name , style: TextStyle(fontSize: 25),),
         SizedBox(height: 20),
         // Button zum Aktualisieren des States
-        ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.orange.shade400,
-            foregroundColor: const Color.fromARGB(255, 237, 235, 235),
-            elevation: 6, //Shatten
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10), // abgerundete Ecken
+        Row( mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            //Anzeigen Button
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.orange.shade400,
+                foregroundColor: const Color.fromARGB(255, 237, 235, 235),
+                elevation: 6, //Shatten
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10), // abgerundete Ecken
+                ),
+                 
+              ),
+              onPressed: _show_Name,
+              child: Text('Name anzeigen', 
+              style: TextStyle( fontSize: 20,),
+              ),
             ),
-             
-          ),
-          onPressed: _show_Name,
-          child: Text('Name anzeigen', 
-          style: TextStyle( fontSize: 20,),
-          ),
-          
+            SizedBox(height: 20),
+          ],
         ),
       ],
     );

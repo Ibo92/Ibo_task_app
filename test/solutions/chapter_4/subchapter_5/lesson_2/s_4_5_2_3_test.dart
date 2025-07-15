@@ -17,6 +17,7 @@ void main() {
       description: 'Text with an empty string',
     );
     expect(initialTextFinder, findsOneWidget);
+    
 
     final buttonFinder = find.widgetWithText(ElevatedButton, 'Name anzeigen');
     await tester.tap(buttonFinder);
