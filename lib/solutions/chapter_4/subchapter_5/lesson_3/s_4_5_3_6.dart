@@ -33,7 +33,7 @@ class ProductIboList extends StatelessWidget {
     ];
 
     // Lösung 1: Container mit fester Höhe
-    return Container(
+    return SizedBox(
       height: MediaQuery.of(context).size.height, // Nimmt gesamte Bildschirmhöhe
       child: ListView.builder(
         shrinkWrap: true, // passt die Höhe der Liste genau an den Inhalt an 
